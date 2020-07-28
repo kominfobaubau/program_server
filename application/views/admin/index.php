@@ -12,7 +12,9 @@
 							<?php if($this->session->flashdata('pesan')): ?>
 								<?= $this->session->flashdata('pesan'); ?>
 							<?php endif; ?>
+							<a href="<?= base_url('auth/logout'); ?>" class="btn btn-danger">Keluar</a>
                             <a href="<?= base_url('index.php/auth/tambah'); ?>" class="btn btn-primary">Tambah</a>
+							
 						</div>
 					</div>
 				</div>

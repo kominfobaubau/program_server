@@ -46,11 +46,11 @@
 				);
 			}
 
-			// if (navbar.is(":visible")) {
-			// 	navbar.removeClass("in");
-			// 	navbar.attr("aria-expanded", "false");
-			// 	$(".js-fh5co-nav-toggle").removeClass("active");
-			// }
+			if (navbar.is(":visible")) {
+				navbar.removeClass("in");
+				navbar.attr("aria-expanded", "false");
+				$(".js-fh5co-nav-toggle").removeClass("active");
+			}
 
 			event.preventDefault();
 			return true;

@@ -8,7 +8,7 @@
 							<h1 class="animate-box"><span class="big">Selamat datang</span> <br><span>di</span> <br><span class="medium">Layanan software gratis</span><br></h1>
 							<!-- <h2 class="animate-box">Klik disini<a href="<?= base_url('download'); ?>" target="_blank" class="fh5co-link"><br><br><img src="<?= base_url('assets/img'); ?>/tangantunjukbawah.svg" alt="" height="50px"></a></h2> -->
 							<div class="call-to-action">
-								<!-- <a href="#" class="download animate-box"><i class="icon-download"></i> Download</a> -->
+								<a href="<?= base_url('download'); ?>" class="download animate-box"><i class="icon-download"></i> Download</a>
 							</div>
 						</div>
 					</div>

@@ -11,7 +11,15 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#" ><span>Beranda</span></a></li>
                         <li><a href="<?= base_url('download'); ?>"  target="_blank"><span>Download</span></a></li>
-                        <li><a href="<?= base_url('login'); ?>" target="_blank"><span>Login</span></a></li>
+                        <li>
+                        <?php if($this->session->userdata('logged_in') == TRUE) {  ?>
+                            <a><span><p>Selamat datang "<?= $this->session->userdata("username"); ?>"</p></span></a>
+                        
+                        <?php } else { ?>
+
+                            <a href="<?= base_url('login'); ?>" target="_blank"><span>Login</span></a>"
+                        <?php } ?>
+                        </li>
                     </ul>
                 </div>
             </nav>
