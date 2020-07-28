@@ -31,13 +31,13 @@
 				</div>
 			</div>
 		</div>
-		<div id="fh5co-counter-section" class="fh5co-counters">
+		<div id="fh5co-counter-section" class="fh5co-counters" >
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 animate-box">
 						<p>
 							<?php $i = 1; foreach($download as $d): ?>
-							<?= $i++; ?>. <?= $d->nama; ?> <a href="<?= base_url('index.php/download/index/'.$d->link); ?>">unduh</a><br>
+							- <?= $d->nama; ?> <a href="<?= base_url('index.php/download/index/'.$d->link); ?>">unduh</a><br>
 							<?php endforeach; ?>
 						</p>
 					</div>

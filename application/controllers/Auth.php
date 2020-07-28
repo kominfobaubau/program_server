@@ -105,6 +105,7 @@ class Auth extends CI_Controller {
 				'link' => $link,
 			];
 			$this->M_download->insert_data($data);
+			$this->session->set_flashdata('pesan','<div class="alert alert-success">Tambah data berhasil</div>');
 			redirect(base_url('index.php/auth/admin'));
 
 		}
@@ -168,6 +169,7 @@ class Auth extends CI_Controller {
 				'link' => $link,
 			];
 			$this->M_download->update_data($data, $id);
+			$this->session->set_flashdata('pesan','<div class="alert alert-success">Ubah data berhasil</div>');
 			redirect(base_url('index.php/auth/admin'));
 
 		}

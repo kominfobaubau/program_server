@@ -9,7 +9,7 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext animate-box">
 							<h3>Silahkan masukan daftar download</h3>
-							<?php if(!empty($this->session->flashdata('pesan'))): ?>
+							<?php if($this->session->flashdata('pesan')): ?>
 								<?= $this->session->flashdata('pesan'); ?>
 							<?php endif; ?>
                             <a href="<?= base_url('index.php/auth/tambah'); ?>" class="btn btn-primary">Tambah</a>
